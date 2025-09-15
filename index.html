@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Santos - Desenvolvedor Full Stack</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="logosevlasemfundo.png"
+      sizes="90x90"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dark">
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="terminal-title">gabriel@sevlatech:~$</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="prompt">$</span>
+              <span class="command typing-animation">npm start portfolio</span>
+            </div>
+            <div class="loading-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="logosevlasemfundo.png" alt="Sevla Tech" class="logo-img" />
+          <span class="logo-text">Gabriel Santos</span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-section="home">
+              <i class="fas fa-home"></i>
+              <span>Início</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">
+              <i class="fas fa-user"></i>
+              <span>Sobre</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-section="skills">
+              <i class="fas fa-code"></i>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-section="experience">
+              <i class="fas fa-briefcase"></i>
+              <span>Experiência</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-section="projects">
+              <i class="fas fa-laptop-code"></i>
+              <span>Projetos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#music" class="nav-link" data-section="music">
+              <i class="fas fa-music"></i>
+              <span>Música</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-section="contact">
+              <i class="fas fa-envelope"></i>
+              <span>Contato</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Home Section -->
+      <section class="section active" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="hero-greeting">
+                <span class="greeting-text">Olá, eu sou</span>
+              </div>
+              <h1 class="hero-name">
+                <span class="name-highlight">Gabriel</span> Santos
+              </h1>
+              <div class="hero-title">
+                <span class="title-prefix">&lt;</span>
+                <span class="typing-text" id="typingText"></span>
+                <span class="title-suffix">/&gt;</span>
+                <span class="cursor">|</span>
+              </div>
+              <p class="hero-description">
+                Desenvolvedor Full Stack especializado em criar soluções
+                digitais inovadoras. Com mais de 3 anos de experiência,
+                transformo ideias em aplicações robustas e escaláveis.
+              </p>
+              <div class="hero-buttons">
+                <a
+                  href="#contact"
+                  class="btn btn-primary"
+                  data-section="contact"
+                >
+                  <i class="fas fa-envelope"></i>
+                  Entre em Contato
+                </a>
+                <a
+                  href="CurriculomodernoparaprofissionaldeTIazul.pdf"
+                  download
+                  class="btn btn-secondary"
+                >
+                  <i class="fas fa-download"></i>
+                  Download CV
+                </a>
+              </div>
+              <div class="hero-social">
+                <a
+                  href="https://github.com/Return-Gabriel"
+                  class="social-link"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gabriel-santos-309932239/"
+                  class="social-link"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="mailto:alves.santos.biel@gmail.com"
+                  class="social-link"
+                  aria-label="Email"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="image-container">
+                <div class="image-frame">
+                  <img src="eu.jpeg" alt="Gabriel Santos" class="profile-img" />
+                  <div class="image-overlay"></div>
+                </div>
+                <div class="floating-elements">
+                  <div class="floating-icon" style="--delay: 0s">
+                    <i class="fab fa-js-square"></i>
+                  </div>
+                  <div class="floating-icon" style="--delay: 1s">
+                    <i class="fab fa-react"></i>
+                  </div>
+                  <div class="floating-icon" style="--delay: 2s">
+                    <i class="fab fa-node-js"></i>
+                  </div>
+                  <div class="floating-icon" style="--delay: 3s">
+                    <i class="fas fa-database"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <div class="scroll-text">Scroll para explorar</div>
+            <div class="scroll-arrow">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-number">01.</span>
+              Sobre Mim
+            </h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <div class="text-content">
+                <p class="about-intro">
+                  Sou um desenvolvedor full stack apaixonado por tecnologia e
+                  inovação. Minha jornada começou em 2021 com BI, mas
+                  rapidamente descobri minha paixão pelo desenvolvimento de
+                  software.
+                </p>
+                <p>
+                  Especializo-me em criar aplicações completas, desde a
+                  concepção até a implementação, sempre focando em performance,
+                  escalabilidade e experiência do usuário. Tenho experiência
+                  sólida em tecnologias modernas e estou sempre em busca de
+                  novos desafios.
+                </p>
+                <p>
+                  Atualmente cursando Análise e Desenvolvimento de Sistemas,
+                  combino conhecimento acadêmico com experiência prática para
+                  entregar soluções de alta qualidade.
+                </p>
+              </div>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <div class="stat-number" data-target="3">0</div>
+                  <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-target="30">0</div>
+                  <div class="stat-label">Projetos Concluídos</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-target="15">0</div>
+                  <div class="stat-label">Tecnologias</div>
+                </div>
+              </div>
+            </div>
+            <div class="about-info">
+              <div class="info-grid">
+                <div class="info-item">
+                  <span class="info-label">Nome:</span>
+                  <span class="info-value">Gabriel Santos</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Idade:</span>
+                  <span class="info-value">24 anos</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Localização:</span>
+                  <span class="info-value">São Paulo, SP</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email:</span>
+                  <span class="info-value">contato.sevlatech@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Telefone:</span>
+                  <span class="info-value">+55 11 97800-1818</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Freelance:</span>
+                  <span class="info-value status-available">Disponível</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-number">02.</span>
+              Habilidades Técnicas
+            </h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="skills-content">
+            <div class="skills-categories">
+              <div class="skill-category">
+                <h3 class="category-title">
+                  <i class="fas fa-code"></i>
+                  Frontend
+                </h3>
+                <div class="skills-grid">
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">HTML5</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                      </div>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">CSS3</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                      </div>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">JavaScript</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                      </div>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-react"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">React</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="45%"></div>
+                      </div>
+                      <span class="skill-percentage">45%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3 class="category-title">
+                  <i class="fas fa-server"></i>
+                  Backend
+                </h3>
+                <div class="skills-grid">
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">Node.js</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="50%"></div>
+                      </div>
+                      <span class="skill-percentage">50%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-code"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">VB.NET</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="60%"></div>
+                      </div>
+                      <span class="skill-percentage">60%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fas fa-hashtag"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">C#</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="75%"></div>
+                      </div>
+                      <span class="skill-percentage">75%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">SQL Server</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                      </div>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">ASP.NET</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="70%"></div>
+                      </div>
+                      <span class="skill-percentage">70%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3 class="category-title">
+                  <i class="fas fa-tools"></i>
+                  Ferramentas
+                </h3>
+                <div class="skills-grid">
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">Git</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="50%"></div>
+                      </div>
+                      <span class="skill-percentage">50%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">Docker</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="45%"></div>
+                      </div>
+                      <span class="skill-percentage">45%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">Azure</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="30%"></div>
+                      </div>
+                      <span class="skill-percentage">30%</span>
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-icon">
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div class="skill-info">
+                      <span class="skill-name">Xamarin</span>
+                      <div class="skill-bar">
+                        <div class="skill-progress" data-width="30%"></div>
+                      </div>
+                      <span class="skill-percentage">30%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-number">03.</span>
+              Experiência & Educação
+            </h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="experience-content">
+            <div class="timeline-container">
+              <div class="timeline-section">
+                <h3 class="timeline-title">
+                  <i class="fas fa-briefcase"></i>
+                  Experiência Profissional
+                </h3>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2025 - Presente</div>
+                      <h4 class="timeline-job">Desenvolvedor Full Stack Jr</h4>
+                      <p class="timeline-description">
+                        Responsável por projetar e desenvolver sistemas
+                        complexos, impactando escalabilidade e arquitetura. Atuo
+                        como mentor de desenvolvedores juniores, contribuindo
+                        para o crescimento da equipe.
+                      </p>
+                      <div class="timeline-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.NET</span>
+                        <span class="tag">SQL Server</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2024 - 2025</div>
+                      <h4 class="timeline-job">
+                        Desenvolvedor Front-end Júnior
+                      </h4>
+                      <p class="timeline-description">
+                        Desenvolvimento de interfaces modernas e responsivas,
+                        trabalhando em equipe com desenvolvedores seniores para
+                        entregar soluções de alta qualidade.
+                      </p>
+                      <div class="timeline-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">HTML5</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2024 - 2025</div>
+                      <h4 class="timeline-job">Desenvolvedor Back-end</h4>
+                      <p class="timeline-description">
+                        Desenvolvimento de APIs RESTful, integrações entre
+                        sistemas e implementação de regras de negócio no
+                        servidor.
+                      </p>
+                      <div class="timeline-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">APIs</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2023 - 2024</div>
+                      <h4 class="timeline-job">Analista de BI Júnior</h4>
+                      <p class="timeline-description">
+                        Primeiro contato com T.I., focando em Business
+                        Intelligence, criação de relatórios gerenciais e
+                        dashboards para apoio à tomada de decisão.
+                      </p>
+                      <div class="timeline-tags">
+                        <span class="tag">Power BI</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Excel</span>
+                        <span class="tag">ETL</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-section">
+                <h3 class="timeline-title">
+                  <i class="fas fa-graduation-cap"></i>
+                  Educação & Certificações
+                </h3>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2024 - 2026</div>
+                      <h4 class="timeline-job">
+                        Análise e Desenvolvimento de Sistemas
+                      </h4>
+                      <p class="timeline-description">
+                        Graduação focada em fundamentos de programação,
+                        arquitetura de computadores, sistemas operacionais,
+                        bancos de dados e engenharia de software.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2025</div>
+                      <h4 class="timeline-job">
+                        Curso de API e Desenvolvimento Mobile
+                      </h4>
+                      <p class="timeline-description">
+                        Especialização em criação de APIs RESTful e
+                        desenvolvimento de aplicativos móveis usando Xamarin e
+                        tecnologias modernas.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2024</div>
+                      <h4 class="timeline-job">Curso de SQL Server</h4>
+                      <p class="timeline-description">
+                        Aprofundamento em bancos de dados relacionais,
+                        otimização de consultas, procedures e administração de
+                        banco de dados.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2023</div>
+                      <h4 class="timeline-job">Curso de Programação em C#</h4>
+                      <p class="timeline-description">
+                        Fundamentos da linguagem C#, orientação a objetos e
+                        desenvolvimento de aplicações Windows Forms.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2025</div>
+                      <h4 class="timeline-job">Curso de DevOps - Alura</h4>
+                      <p class="timeline-description">
+                        Especialização em práticas DevOps, automação de deploy,
+                        CI/CD, containerização e monitoramento de aplicações.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2023</div>
+                      <h4 class="timeline-job">Curso de ASP.NET</h4>
+                      <p class="timeline-description">
+                        Desenvolvimento web com ASP.NET Core, MVC, Web API e
+                        Entity Framework para aplicações robustas e escaláveis.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2023</div>
+                      <h4 class="timeline-job">Curso de Windows Forms</h4>
+                      <p class="timeline-description">
+                        Desenvolvimento de aplicações desktop com Windows Forms,
+                        interfaces gráficas e integração com bancos de dados.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2024</div>
+                      <h4 class="timeline-job">Curso de Figma</h4>
+                      <p class="timeline-description">
+                        Design de interfaces e prototipagem com Figma, criação
+                        de wireframes e sistemas de design.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-date">2016</div>
+                      <h4 class="timeline-job">Curso de Photoshop</h4>
+                      <p class="timeline-description">
+                        Edição e manipulação de imagens, criação de layouts e
+                        elementos gráficos para web e impressão.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-number">04.</span>
+              Projetos em Destaque
+            </h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="projects-content">
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-image">
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a
+                        href="https://return-gabriel.github.io/BarbeariaGit/"
+                        class="project-link"
+                        aria-label="Ver projeto"
+                      >
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link" aria-label="Ver código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project-placeholder">
+                    <i class="fas fa-cut"></i>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">Sistema de Barbearia</h3>
+                  <p class="project-description">
+                    Sistema completo para gestão de barbearias, incluindo
+                    agendamento de clientes, controle de serviços e relatórios
+                    financeiros.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Windows Forms</span>
+                    <span class="tech-tag">SQL Server</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a
+                        href="https://return-gabriel.github.io/E-commerceGit/"
+                        class="project-link"
+                        aria-label="Ver projeto"
+                      >
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link" aria-label="Ver código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project-placeholder">
+                    <i class="fas fa-running"></i>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">E-commerce de Tênis</h3>
+                  <p class="project-description">
+                    Loja virtual especializada em tênis esportivos com catálogo
+                    completo, carrinho de compras e sistema de pagamento
+                    integrado.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link" aria-label="Ver projeto">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link" aria-label="Ver código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project-placeholder">
+                    <i class="fas fa-smoking"></i>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">E-commerce de Narguilé</h3>
+                  <p class="project-description">
+                    Plataforma de vendas online para produtos de narguilé,
+                    incluindo essências, carvões e acessórios com sistema de
+                    categorização avançado.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">PHP</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link" aria-label="Ver projeto">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a href="#" class="project-link" aria-label="Ver código">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="project-placeholder">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <h3 class="project-title">
+                    Sistema de Chatbot com Autoatendimento
+                  </h3>
+                  <p class="project-description">
+                    Chatbot inteligente para atendimento automatizado ao
+                    cliente, com processamento de linguagem natural e integração
+                    com sistemas de CRM.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">API REST</span>
+                    <span class="tech-tag">Machine Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Music Section -->
+      <section class="section" id="music">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-number">05.</span>
+              Minhas Músicas Favoritas
+            </h2>
+            <div class="section-line"></div>
+          </div>
+          <div class="music-content">
+            <div class="music-intro">
+              <p>
+                Música é uma grande fonte de inspiração para mim. Aqui está
+                minha playlist favorita que me acompanha durante o
+                desenvolvimento.
+              </p>
+            </div>
+
+            <div class="spotify-playlist-container">
+              <div class="playlist-header">
+                <div class="spotify-logo">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="#1DB954"
+                  >
+                    <path
+                      d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"
+                    />
+                  </svg>
+                </div>
+                <div class="playlist-info">
+                  <h3>Minha Playlist Para Codar</h3>
+                  <p>Ouça diretamente do Spotify</p>
+                </div>
+              </div>
+
+              <div class="spotify-embed-wrapper">
+                <iframe
+                  style="border-radius: 12px"
+                  src="https://open.spotify.com/embed/playlist/1EbxXZJHTnrY3WZDga8NJU?utm_source=generator&theme=0"
+                  width="100%"
+                  height="500"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+
+              <div class="playlist-description">
+                <p>
+                  Esta é minha playlist pessoal que me inspira durante o
+                  desenvolvimento. Contém uma mistura de estilos que me ajudam a
+                  manter o foco e a criatividade.
+                </p>
+                <div class="spotify-features">
+                  <div class="feature">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Reprodução direta</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <span>Escolhida pessoalmente</span>
+                  </div>
+                  <div class="feature">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Atualizada regularmente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              <span class="title-number">06.</span>
+              Vamos Trabalhar Juntos
+            </h2>
+            <div class="info-item">
+              <span class="info-label">TEMPO DE RESPOSTA:</span>
+              <span class="info-value status-available">3 DIAS</span>
+            </div>
+            <div class="section-line"></div>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-text">
+                <h3>Pronto para o próximo projeto?</h3>
+                <p>
+                  Estou sempre interessado em novos desafios e oportunidades. Se
+                  você tem um projeto em mente ou quer apenas conversar sobre
+                  tecnologia, ficarei feliz em ouvir de você.
+                </p>
+              </div>
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="method-info">
+                    <h4>Email</h4>
+                    <p>contato.sevlatech@gmail.com</p>
+                  </div>
+                </div>
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="method-info">
+                    <h4>Telefone</h4>
+                    <p>+55 11 97800-1818</p>
+                  </div>
+                </div>
+                <div class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="method-info">
+                    <h4>Localização</h4>
+                    <p>São Paulo, SP - Brasil</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-social">
+                <a href="https://github.com/Return-Gabriel" class="social-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gabriel-santos-309932239/"
+                  class="social-link"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="mailto:alves.santos.biel@gmail.com?subject=Contato%20pelo%20site&body=Olá%20Sevla,"
+                  class="social-link"
+                >
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form class="form" id="contactForm">
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Assunto</label>
+                  <input type="text" id="subject" name="subject" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            &copy; 2025 Gabriel Santos. Desenvolvido com
+            <i class="fas fa-heart"></i> e muito café.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+    <script src="games.js"></script>
+  </body>
+</html>
